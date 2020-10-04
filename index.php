@@ -76,17 +76,17 @@ $conn->set_charset("utf8mb4");
 $date = date("Y/m/d");
 
 $q = "CREATE TABLE IF NOT EXISTS `".$date."` (
-        id VARCHAR(177) NOT NULL PRIMARY KEY,
+        -- id VARCHAR(177) NOT NULL PRIMARY KEY, id
 		sm VARCHAR(177) 'facebook',
         name VARCHAR(177) NOT NULL,
 		profileimg VARCHAR(177),
-		inpost_url VARCHAR(255),
+		-- inpost_url VARCHAR(255), permalink_url
         screen_name VARCHAR(177) NOT NULL,
-        text TEXT,
-        created_at DATETIME,
-		repost_count INT,
-		likes_count INT,
-		comments_count INT,
+        -- text TEXT, message
+        -- created_at DATETIME, created_time
+		-- repost_count INT, shares
+		-- likes_count INT, publishing_stats
+		-- comments_count INT, comments ==> total_count
 		media_url_image VARCHAR(255),
 		media_url_video VARCHAR(255)
 
