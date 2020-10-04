@@ -157,14 +157,14 @@ foreach ($userids as $uid) {
 
 // $date = date("Y/m/d");
 // $q = "CREATE TABLE IF NOT EXISTS `".$date."` (
-//         id VARCHAR(177) NOT NULL PRIMARY KEY, [id]
+//      id VARCHAR(177) NOT NULL PRIMARY KEY, [id]
 // 		sm VARCHAR(177) 'facebook', [dont know]
-//         name VARCHAR(177) NOT NULL, [name]
+//      name VARCHAR(177) NOT NULL, [name]
 // 		profileimg VARCHAR(177), [profile_pic]
 // 		inpost_url VARCHAR(255), [permalink_url]
-//         screen_name VARCHAR(177) NOT NULL, [username]
-//         text TEXT, [message]
-//         created_at DATETIME, [created_time]
+//      screen_name VARCHAR(177) NOT NULL, [username]
+//      text TEXT, [message]
+//      created_at DATETIME, [created_time]
 // 		repost_count INT, [shares]
 // 		likes_count INT, [publishing_stats]
 // 		comments_count INT, [comments ==> total_count]
