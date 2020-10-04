@@ -166,21 +166,20 @@ foreach ($userids as $uid) {
 
 // $date = date("Y/m/d");
 // $q = "CREATE TABLE IF NOT EXISTS `".$date."` (
-//      id VARCHAR(177) NOT NULL PRIMARY KEY, [id]
+//      id VARCHAR(177) NOT NULL PRIMARY KEY, [post_id]
 // 		sm VARCHAR(177) 'facebook', [dont know]
-//      name VARCHAR(177) NOT NULL, [name]
+//      name VARCHAR(177) NOT NULL, [fullname]
 // 		profileimg VARCHAR(177), [profile_pic]
-// 		inpost_url VARCHAR(255), [permalink_url]
+// 		inpost_url VARCHAR(255), [post_url]
 //      screen_name VARCHAR(177) NOT NULL, [username]
-//      text TEXT, [message]
-//      created_at DATETIME, [created_time]
-// 		repost_count INT, [shares]
-// 		likes_count INT, [publishing_stats]
-// 		comments_count INT, [comments ==> total_count]
-// 		media_url_image VARCHAR(255), [full_picture]
-// 		media_url_video VARCHAR(255) [source]
-
-//         )";
+//      text TEXT, [post_message]
+//      created_at DATETIME, [created]
+// 		repost_count INT, [repost_count]
+// 		likes_count INT, [likes]
+// 		comments_count INT, [comment_count]
+// 		media_url_image VARCHAR(255), [post_pic]
+// 		media_url_video VARCHAR(255) [post_vid]
+//      )";
 // $res = mysqli_query($conn, $q);
 
 ?>
