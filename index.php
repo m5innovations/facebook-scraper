@@ -99,7 +99,7 @@ foreach ($userids as $uid) {
             $temp['created'] = $postData['created_time'];
             $temp['post_url'] = $postData['permalink_url'];
 
-
+        
             // GETTING COMMENTS COUNT
             try {
                 $response = $fb->get(
@@ -130,6 +130,30 @@ foreach ($userids as $uid) {
 
     array_push($allUserData, $data);
 }
+
+
+// ARRAY STRUCTURE
+// [
+//     {
+//         'fullname': text,
+//         'profile_pic': text,
+//         'username': text,
+//         'post_data': [
+//             {
+//             'post_id': int,
+//             'post_message': text,
+//             'likes': int,
+//             'post_pic': text,
+//             'post_vid': text,
+//             'repost_count': int,
+//             'created': date,
+//             'post_url': text,
+//             'comment_count': int
+//             },
+//             {...}, {...}, ...
+//         ]
+//     }
+// ]
 
 // $date = date("Y/m/d");
 // $q = "CREATE TABLE IF NOT EXISTS `".$date."` (
