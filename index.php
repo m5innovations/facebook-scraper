@@ -1,3 +1,12 @@
+<!-- REFERENCES -->
+<!-- 
+https://developers.facebook.com/docs/graph-api/reference/v5.0/user
+https://developers.facebook.com/docs/graph-api/reference/v5.0/post
+https://developers.facebook.com/docs/graph-api/reference/v5.0/post/comments
+https://developers.facebook.com/docs/graph-api/using-graph-api/
+https://www.youtube.com/watch?v=vsuDgQVLKwQ
+ -->
+
 <?php
 
 use Facebook\Facebook;
