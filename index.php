@@ -5,7 +5,7 @@ https://developers.facebook.com/docs/graph-api/reference/v5.0/post
 https://developers.facebook.com/docs/graph-api/reference/v5.0/post/comments
 https://developers.facebook.com/docs/graph-api/using-graph-api/
 https://www.youtube.com/watch?v=vsuDgQVLKwQ
- -->
+-->
 
 <?php
 
@@ -29,10 +29,6 @@ $fb = new Facebook([
     'app_secret' => $appSecret,
     'default_graph_version' => 'v2.10',
 ]);
-
-// DB CONNECTION
-$conn = mysqli_connect($servername, $username, $password, $database);
-$conn->set_charset("utf8mb4");
 
 // READING USER-IDS FROM TEXT FILE
 $userids_file = file_get_contents("userids.txt");
@@ -164,6 +160,10 @@ foreach ($userids as $uid) {
 //     },
 //     {...}, {...}, ...
 // ]
+
+// DB CONNECTION
+$conn = mysqli_connect($servername, $username, $password, $database);
+$conn->set_charset("utf8mb4");
 
 // $date = date("Y/m/d");
 // $q = "CREATE TABLE IF NOT EXISTS `".$date."` (
