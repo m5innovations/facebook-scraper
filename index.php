@@ -183,4 +183,17 @@ $conn->set_charset("utf8mb4");
 //      )";
 // $res = mysqli_query($conn, $q);
 
+foreach ($posts as $post) {
+    $sql="insert into fb_data (id,name,likes,profileimg, inpost_url, screen_name,text,created_at,repost_count, likes_count, comments_count, media_url_image, media_url_video) VALUES ({$allUserData['post_id']},{$allUserData['fullname']},{$allUserData['profile_pic']},{$allUserData['post_url']},{$allUserData['username']},{$allUserData['post_message']},{$allUserData['created']} , {$allUserData['repost_count']}, {$allUserData['likes']}, {$allUserData['comment_count']}, {$allUserData['post_pic']}, {$allUserData['post_vid']})";
+    if (mysqli_multi_query($conn, $sql)) {
+        echo "New records created successfully";
+      } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+      }
+      
+      mysqli_close($conn);
+      
+}
+
+
 ?>
